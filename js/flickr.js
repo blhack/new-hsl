@@ -33,9 +33,14 @@ define([
 		//image_url = "http://placekitten.com/800/800";
 		
 		//for now just use the first image we got back from flickr
-		image_url = photos[0]["image_url"];
-		title = photos[0]["title"];
-		link = photos[0]["link"];
+		image_url = photos[3]["image_url"];
+		title = photos[3]["title"];
+		link = photos[3]["link"];
+
+		//If the title will overflow the image, chop it down.
+		//if (title.length >= 21) {
+		//	title = title.substring(0,18) + "...";
+		//}
 
 		dom.byId('main_image').innerHTML = "<a href='" + link + "'> <img id='main_image' src='" + image_url + "'></a><div class='caption' id='main_image_caption'>" + title + "</div>";
 

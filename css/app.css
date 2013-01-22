@@ -106,8 +106,13 @@ body {
 }
 
 .caption{
-	font-size: 29px;
+	font-size: 30px;
 	text-align: right;
+	position: relative;
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+	top:-40px;
+	right:10px;
+	line-height:35px;
 }
 
 .spinner{
